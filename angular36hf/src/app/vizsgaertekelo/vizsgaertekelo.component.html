@@ -1,0 +1,13 @@
+<h2>Vizsgaértékelés</h2>
+<form>
+    <div class="form-control">
+        <label for="maxPontszam">A maximális pontszám a vizsgán:</label>
+        <input type="string" class="form-control" [(ngModel)]="MaxPontszam" name="maxPontszam" id="maxPontszam">
+        <label for="elertPontszam">Az elért pontszám:</label>
+        <input type="string" class="form-control" [(ngModel)]="ElertPontszam" name="elertPontszam" id="elertPontszam">
+    </div>
+    <div class="text-center">
+        <button class="btn btn-success m-2" (click)="vizsgaErtekel()">A vizsgán elért teljesítmény:</button>
+    </div>
+</form>
+

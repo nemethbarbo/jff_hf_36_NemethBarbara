@@ -1,0 +1,17 @@
+<form>
+    <h2 class="text-center">{{Title}}</h2>
+    <div class="form-control">
+        <label for="aOldal">A oldal:</label>
+        <input type="number" class="form-control" [(ngModel)]="AOldal" name="aOldal" id="aOldal" min="1">
+    </div>
+    <div class="form-control">
+        <label for="bOldal">B oldal:</label>
+        <input type="number" class="form-control" [(ngModel)]="BOldal" name="bOldal" id="bOldal" min="1">
+    </div>
+    <div class="text-center">
+        <button class="btn btn-success m-2" (click)="cOldalKiszamit()">C oldal számol</button>
+    </div>
+</form>
+<!--<p>A háromszög a oldalának mérete {{AOldal}}</p>
+<p>A háromszög b oldalának mérete {{BOldal}}</p>
+<p>A háromszög c oldalának mérete: {{ getPytagorasz() }}</p>-->

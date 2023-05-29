@@ -1,0 +1,18 @@
+<div class="container mt-5 w-25">
+    <form>
+        <h2 class="text-center">{{Title}}</h2>
+        <div class="form-control">
+            <label for="beosztas">A dolgozó beosztása</label>
+                <select class="form-control" [(ngModel)]="Beosztas" name="beosztas" id="beosztas">        
+                    <option value="programozo">programozó</option>
+                    <option value="grafikus">grafikus</option>
+                    <option value="ugyintezo">ügyintéző</option>
+                </select>
+            <label for="bruttoBer">A dolgozó bruttó bére</label>
+            <input type="number" class="form-control" [(ngModel)]="BruttoBer" name="bruttoBer" id="bruttoBer" min="1">
+            <div class="text-center">
+                <button class="btn btn-success m-2" (click)="beremelesKiir()" name="beremeles">Számol</button>
+            </div>
+        </div>
+    </form>
+</div>

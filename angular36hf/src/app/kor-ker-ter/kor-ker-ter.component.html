@@ -1,0 +1,11 @@
+<h2>Kör kerület, terület kiszámítása</h2>
+<form>
+    <div class="form-control">
+        <label for="korSugara">Kör sugara:</label>
+        <input type="number" class="form-control" [(ngModel)]="KorSugara" name="korSugara" id="korSugara">
+    </div>
+</form>
+<p>A kör sugara: {{KorSugara}}</p>
+<p>A kör kerülete: {{ getKorKerulet() }}</p>
+<p>A kör területe: {{ getKorTerulet() }}</p>
+

@@ -1,0 +1,10 @@
+<h2>Telefonszám formátum ellenőrzése</h2>
+<form>
+    <div class="form-control">
+        <label for="telefonszam">Az ellenőrizendő telefonszám:</label>
+        <input type="string" class="form-control" [(ngModel)]="Telefonszam" name="telefonszam" id="telefonszam">
+    </div>
+    <div class="text-center">
+        <button class="btn btn-success m-2" (click)="telefonszamMegfeleloE()">A telefonszám formátuma</button>
+    </div>
+</form>
